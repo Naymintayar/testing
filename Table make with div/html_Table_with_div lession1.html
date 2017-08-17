@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Table with div</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.all{
+			padding: 5px;
+			background: #4A79B2;
+		}
+		.hd{
+			height: 100px;
+			margin-bottom: 3px;
+			background: #FFDFDF; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#FFDFDF, #FFA9A8); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(#FFDFDF, #FFA9A8); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(#FFDFDF, #FFA9A8); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(#FFDFDF, #FFA9A8); /* Standard syntax */
+		}
+		.hd h2{
+			line-height: 100px;
+			text-align: center;
+		}
+		.nav{
+			height: 100px;
+			margin-bottom: 8px;
+			background: #DFF8FF; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#DFF8FF, #A7ECFF); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(#DFF8FF, #A7ECFF); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(#DFF8FF, #A7ECFF); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(#DFF8FF, #A7ECFF); /* Standard syntax */
+		}
+		.nav h2{
+			line-height: 100px;
+			text-align: center;
+		}
+		.bd{
+			height: 350px;
+			margin-bottom: 10px;
+		}
+		.lf{
+			height: 332px;
+			width: 68%;
+			float: left;
+			margin-right: 15px;
+			padding: 10px;
+			background: #F3FFE3; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#F3FFE3, #D6F7A5); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(#F3FFE3, #D6F7A5); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(#F3FFE3, #D6F7A5); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(#F3FFE3, #D6F7A5); /* Standard syntax */
+		}
+		.lf h2{
+			text-align: center;
+		}
+		.hding{
+			border: 2px solid #DD9090;
+			height: 45px;
+			margin-bottom: 7px;
+			background: #FFDFDF; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#FFDFDF, #FFA9A8); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(#FFDFDF, #FFA9A8); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(#FFDFDF, #FFA9A8); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(#FFDFDF, #FFA9A8); /* Standard syntax */
+		}
+		.hding h2{
+			line-height: 45px;
+		}
+		.art{
+			border: 2px solid #B3A0CA;
+			height: 248px;
+			background: #EEE7F8; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#EEE7F8, #CCB9E9); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(#EEE7F8, #CCB9E9); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(#EEE7F8, #CCB9E9); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(#EEE7F8, #CCB9E9); /* Standard syntax */
+		}
+		.art h2{
+			line-height: 250px;
+		}
+		.rh{
+			border: 2px solid black;
+			height: 350px;
+			width: 29%;
+			float: left;
+			background: #EEE7F8; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#EEE7F8, #CCB9E9); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(#EEE7F8, #CCB9E9); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(#EEE7F8, #CCB9E9); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(#EEE7F8, #CCB9E9); /* Standard syntax */
+		}
+		.rh h2{
+			line-height: 320px;
+			text-align: center;
+		}
+		.ft{
+			height: 100px;
+			background: #FFE8D6; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(#FFE8D6, #FFC089); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(#FFE8D6, #FFC089); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(#FFE8D6, #FFC089); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(#FFE8D6, #FFC089); /* Standard syntax */
+		}
+		.ft h2{
+			line-height: 100px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+<!-- ******* header start ***** -->
+		<div class="hd">
+			<h2>&lt;header&gt;</h2>
+		</div>
+<!-- ******* header end ****** -->
+
+
+
+<!-- ******* navagation start ******* -->
+		<div class="nav">
+			<h2>&lt;nav&gt;</h2>
+		</div>
+<!-- ******* navagation end ******** -->
+
+
+
+<!-- ******* body start ******* -->
+		<div class="bd">
+			
+		<!-- ****** left side start ****** -->
+			<div class="lf">
+				<h2>&lt;section&gt;</h2>
+				<div class="hding">
+					<h2>&lt;heading&gt;</h2>
+				</div>
+				<div class="art">
+					<h2>&lt;artical&gt;</h2>
+				</div>
+			</div>
+		<!-- ******* left side end ******* -->
+
+
+		<!-- ******* right side start ****** -->
+			<div class="rh">
+				<h2>&lt;aside&gt;</h2>
+			</div>
+		<!-- ******* right side end ******* -->
+		</div>
+<!-- ******* body end ****** -->
+
+
+
+<!-- ******** footer start ******* -->
+		<div class="ft">
+			<h2>&lt;footer&gt;</h2>
+		</div>
+<!-- ******** footer end ********* -->
+	</div>
+</body>
+</html>

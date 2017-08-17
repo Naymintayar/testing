@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Html Form</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.al{
+			margin: auto;
+			width: 1300px;
+			background: url(Resources/best.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.hd{
+			width: 100%;
+			height: 150px;
+			border: 1px solid red;
+			background: rgba(200,150,100,0.9);
+		}
+		.hd h1{
+			text-align: center;
+			line-height: 150px;
+			font-family: Arial;
+		}
+		.mnu{
+			width: 100%;
+			height: 30px;
+			border: 1px solid black;
+			background: rgba(192,192,192,0.9);
+		}
+		.mnu ul{
+			list-style: none;
+			line-height: 27px;
+		}
+		.mnu ul li{
+			width: 120px;
+			display: block;
+			float: left;
+			margin-left: 90px;
+			margin-right: 50px;
+		}
+		.mnu ul li a{
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.mnu ul li a:hover{
+			color:green;
+			text-decoration: underline;
+		}
+		.cont{
+			width: 100%;
+			height: 451px;
+		}
+		.ls{
+			width:15%;
+			height: 450px;
+			background: rgba(255,0,0,0.9);
+			float: left;
+		}
+		.nw1{
+			width: 96.5%;
+			height: 200px;
+			border: 2px solid black;
+			margin-top: 5px;
+			margin-left: 2.5px;
+			text-align: center;
+			background: url(Resources/best.jpg);
+			background-size: 100% 100%;
+		}
+		.nw1 h2{
+			color: red;
+		}
+		.nw1 a{
+			text-decoration: none;
+			color: red;
+
+		}
+		.nw1 p{
+			font-size: 12px;
+		}
+		.ctr{
+			width: 45%;
+			height:450px;
+			background: rgba(0,0,255,0.9);
+			float: left;
+		}
+		.rs{
+			width: 40%;
+			height: 450px;
+			background: rgba(255,0,0,0.9);
+			float:left;
+		}
+		.reg{
+			border: 2px solid black;
+			width: 50%;
+			height: 200px;
+			margin-left: 125px;
+			margin-top: 5px;
+		}
+		.ft{
+			width: 100%;
+			height: 45px;
+			background: rgba(192,192,192,0.9);
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="al">
+		<!-- ***** header ***** -->
+		<div class="hd">
+			<h1>Best Education Center</h1>
+		</div>
+		<!-- ***** /header ***** -->
+
+
+		<!-- ***** menu ***** -->
+		<div class="mnu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Japanese</a></li>
+				<li><a href="#">Developer</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Register</a></li>
+			</ul>
+		</div>
+		<!-- ***** /menu ***** -->
+
+
+		<!-- ***** contant ***** -->
+		<div class="cont">
+			<!-- *** leftside *** -->
+			<div class="ls">
+				<div class="nw1">
+					<h2>Japanese</h2>
+					<a href="#"><p>
+						July Sections Are Bellow<br>
+						ဒီလသင္တန္းတြငသ္လေေရာက္<br>
+						အပ္ႏွံလိုသူမ်ားအေနျဖင့္<br><br><br><br><br><br>
+						အျပည့္အစံုဖတ္ရန္
+					</p>
+					</a>
+				</div>
+			</div>
+			<!-- *** /leftside *** -->
+
+
+			<!-- *** center *** -->
+			<div class="ctr">
+				
+			</div>
+			<!-- *** /center *** -->
+
+
+			<!-- *** right *** -->
+			<div class="rs">
+				<div class="reg">
+					<form>
+						User name:&nbsp;&nbsp;
+						<input type="text" name="usr_name"><br>
+						Password:&nbsp;&nbsp;&nbsp;
+						<input type="password" name="usr_password"><br>
+						Male: 
+						<input type="checkbox" name="gdr_1" value="on"> <span class="choice">/</span>
+						Female: 
+						<input type="checkbox" name="gdr_2" value="on"><br>
+						Date Of Birth<br>
+						Day:  
+						<select name="dropdown">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+						Months: 
+						<select name="dropdown">
+							<option value="1">Jan</option>
+							<option value="2">Feb</option>
+							<option value="3">Mar</option>
+							<option value="4">Apr</option>
+							<option value="5">May</option>
+							<option value="6">June</option>
+							<option value="7">July</option>
+							<option value="8">Aug</option>
+							<option value="9">Sept</option>
+							<option value="10">Oct</option>
+							<option value="11">Nov</option>
+							<option value="12">Dec</option>
+						</select><br>
+						Year:
+						<input type="text" name="dtb_year"><br>
+						Profile Pic:
+						<input type="file" name="fileupload" accept="image/*"><br>
+						<input type="button" name="ok" value="OK">
+						<input type="reset" name="reset" value="Reset">
+						<input type="submit" name="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+			<!-- *** /right *** -->
+		</div>
+		<!-- ***** contant ***** -->
+
+
+		<!-- ***** footer ***** -->
+		<div class="ft">
+			
+		</div>
+		<!-- ***** /footer ***** -->
+	</div>
+</body>
+</html>
